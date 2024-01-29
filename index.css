@@ -1,0 +1,240 @@
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v26-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/montserrat-v26-latin-500.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat-v26-latin-700.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/montserrat-v26-latin-800.woff2") format("woff2");
+}
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1800px;
+  padding: 25px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Montserrat", "Arial", sans-serif;
+  transition: all 0.4s ease-in-out;
+}
+body::-webkit-scrollbar {
+  width: 1px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: gray;
+  outline: 1px solid transparent;
+}
+.header__todo {
+  background-color: #2196f3;
+  box-shadow: 0px 16px 26px 11px rgba(34, 60, 80, 0.2);
+  margin-bottom: 50px;
+}
+.header__main-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__theme-box {
+  max-width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.todo__title {
+  color: white;
+  font-size: 32px;
+}
+
+#theme__button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  width: 50px;
+  height: 40.5px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.4s ease-in-out;
+}
+
+#theme__button:hover {
+  opacity: 0.7;
+}
+
+#theme__button i {
+  font-size: 20px;
+}
+
+.dark__theme-moon,
+.light__theme-sun {
+  transition: display 0.5s ease;
+}
+
+.theme-transition {
+  transition: background-color 0.5s ease;
+}
+
+.card__box-wrapper {
+  width: 100%;
+  border: 2px solid #2196f3;
+}
+
+.main__card {
+  max-width: 100%;
+  border: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 30px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 14px -5px rgba(34, 60, 80, 0.29);
+  transition: all 1s ease-in-out;
+  margin-top: 20px;
+}
+
+.buttons__control {
+  display: flex;
+  gap: 20px;
+}
+
+.edit__btn,
+.trash__btn {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#editButton,
+#deleteButton {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.trash__btn {
+  color: red;
+}
+
+.edit__btn {
+  color: orange;
+}
+
+.dayName {
+  font-size: 32px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.taskForm {
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid;
+}
+
+.input__forms {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#addTask,
+#addDay {
+  width: 25%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 8.5px 30px;
+  border: 2px solid #e4e2e6;
+  outline-color: transparent;
+  color: #828282;
+}
+
+#addTask:focus,
+#addDay:focus {
+  color: #828282;
+  border: 1px solid #828282;
+}
+
+#submitTask {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 55px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.4s ease-in-out;
+  border: 2px solid transparent;
+}
+
+#submitTask:hover {
+  background-color: transparent;
+  color: #4caf50;
+  border: 2px solid #4caf50;
+}
+
+.main__card {
+  transition: max-width 0.5s;
+}
+
+.main__body-box {
+  max-width: 100%;
+}
+
+#main__content {
+  width: 100%;
+}
+
+#inpTime {
+  color: #2196f3;
+  width: 150px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #4caf50;
+  border: 2px solid #e4e2e6;
+}
+
+#dayTitle,
+#taskDesc {
+  color: #828282;
+  text-transform: capitalize;
+  width: 15%;
+}
+
+#taskTime {
+  font-weight: 600;
+  color: #4caf50;
+}

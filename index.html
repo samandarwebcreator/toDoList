@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="header__todo">
+      <div class="header__bg-color">
+        <div class="container">
+          <div class="header__main-box">
+            <h1 class="todo__title">TODO APP</h1>
+            <div class="header__theme-box">
+              <button id="theme__button">
+                <i class="dark__theme-moon fa-solid fa-moon"></i>
+                <i class="light__theme-sun fa-solid fa-sun"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="main__body-box">
+        <div class="form__box">
+          <div class="taskForm">
+            <div class="input__forms">
+              <input
+                type="text"
+                placeholder="Enter the day!"
+                id="addDay"
+                required
+              />
+              <input
+                type="text"
+                placeholder="Enter the task!"
+                id="addTask"
+                required
+              />
+              <input id="inpTime" type="time" required />
+              <button id="submitTask">Add</button>
+            </div>
+          </div>
+        </div>
+        <ul id="main__content"></ul>
+      </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+
+    <script type="module" src="theme.js"></script>
+  </body>
+</html>
